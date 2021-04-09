@@ -109,6 +109,9 @@ client.on('message', msg => {
 	setTimeout(function() { GetServerPlayers(msg, "193.203.39.13", 'B-Zone (RPG1)') }, 3000)
 	setTimeout(function() { GetServerPlayers(msg, "193.203.39.46", 'B-Hood') }, 4000)
     }
+    else if(command === "testanno") {
+	msg.channel.send({files: ["./images/anno.png"]});    
+    }
 })
 
 function GetServerPlayers(msg, ip, sv_name) {

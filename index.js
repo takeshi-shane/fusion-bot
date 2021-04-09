@@ -109,8 +109,11 @@ client.on('message', msg => {
 	setTimeout(function() { GetServerPlayers(msg, "193.203.39.13", 'B-Zone (RPG1)') }, 3000)
 	setTimeout(function() { GetServerPlayers(msg, "193.203.39.46", 'B-Hood') }, 4000)
     }
-    else if(command === "testanno") {
+    else if(command === "annoimg") {
 	msg.channel.send({files: ["./images/anno.png"]});    
+    }
+    else if(command === "partimg") {
+	msg.channel.send({files: ["./images/partners.png"]});    
     }
 })
 
